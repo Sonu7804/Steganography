@@ -50,23 +50,6 @@ get_decoded_text(bytes_string): Decrypts the extracted bytes string to obtain th
 decode_from_image(): Extracts the encoded binary data from the image.
 are_values_valid(): Validates the password and image path before decoding.
 
-# 2. Wave Audio Steganography
-class ExtractWaveGUI
-Purpose: Provides a GUI for extracting hidden messages from wave audio files.
-Methods:
-__init__(root): Initializes the GUI window and sets up the necessary components.
-create_widgets(): Creates the GUI components, including labels, entry widgets, and buttons.
-browse_audio(): Opens a file dialog for selecting a wave audio file.
-extract_message(): Extracts and displays the hidden message from the selected wave audio file.
-class HiddenWaveGUI
-Purpose: Provides a GUI for hiding messages in wave audio files.
-Methods:
-__init__(root): Initializes the GUI window and sets up the necessary components.
-create_widgets(): Creates the GUI components, including labels, entry widgets, and buttons.
-display_logo(): Displays a logo image in the GUI.
-browse_audio(): Opens a file dialog for selecting a wave audio file.
-browse_output(): Opens a file dialog for selecting the output path and filename.
-hide_message(): Hides the entered message in the selected wave audio file and saves the result.
 
 # How to Run
 Ensure the required libraries are installed (Pillow, pycryptodome, Numpy, Tkinter, Wave).
